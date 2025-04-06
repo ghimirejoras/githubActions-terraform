@@ -1,0 +1,44 @@
+# Terraform state files (contain sensitive data)
+*.tfstate
+*.tfstate.*
+.terraform
+.terraform/
+.terraform.tfstate.lock.info
+
+# Terraform variables & backend configs (may contain secrets)
+*.tfvars
+*.tfvars.json
+backend-config.tfvars
+
+# Terraform plan & override files (local execution)
+*.tfplan
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Sensitive data (SSH keys, credentials)
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# Terraform CLI configuration files
+.terraformrc
+terraform.rc
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ansible files (if Ansible is in your repo)
+ansible/hosts
+ansible/.ansible.cfg
